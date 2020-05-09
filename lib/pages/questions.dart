@@ -27,7 +27,16 @@ class _QuestionsState extends State<Questions> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              HeathTopicCard("I can't find my medicine in search"),
+              GestureDetector(
+                onTap: (){
+//                  Navigator.pushNamed(context, '/questionDetails', arguments: Question(
+//                    "I can't find my medicine in search",
+//                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at augue sollicitudin ligula lobortis eleifend. Aliquam efficitur, felis ut euismod dictum, mauris justo dignissim augue, quis accumsan est ex ac orci. Duis fringilla eu purus vel accumsan. Fusce finibus nisl eu vulputate sagittis."
+//                  ));
+                  print("Questão clicada!");
+                },
+                child: HeathTopicCard("I can't find my medicine in search")
+              ),
               HeathTopicCard("My medication appears in search but is unavailable"),
               HeathTopicCard("I can't move to get the medicine."),
             ],
@@ -58,5 +67,12 @@ class HeathTopicCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class Question {
+  final String title;
+  final String body;
+
+  Question(this.title, this.body);
 }
 

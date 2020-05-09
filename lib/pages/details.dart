@@ -41,7 +41,7 @@ class _DetailsState extends State<Details> {
                 DataRow("Typification", args.typification),
                 DataRow("Classification", args.classification),
                 DataRow("Localization", args.healthCenter.name),
-                DataRow("Adress", args.healthCenter.adress),
+                DataRow("Address", args.healthCenter.adress),
                 DataRow("Disponibility","${args.count} units"),
                 DataRow("Distance","${args.healthCenter.distance}"),
                 Container(
