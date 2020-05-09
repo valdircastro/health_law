@@ -1,11 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_search_panel/search_item.dart';
 import 'package:world_time_app/models/medicament.dart';
 import 'package:world_time_app/models/healthCenter.dart';
 import 'package:world_time_app/data/fortalezaData.dart';
-import 'package:search_widget/search_widget.dart';
-import 'package:flutter_search_panel/flutter_search_panel.dart';
 import 'package:world_time_app/globals.dart';
 import 'package:world_time_app/components/h_app_bar.dart';
 
