@@ -72,7 +72,7 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
-                    'Login com Facebook',
+                    'Login with Facebook',
                     style: TextStyle(
                       color: Colors.white
                     ),

@@ -6,16 +6,24 @@ import 'package:world_time_app/pages/search.dart';
 import 'package:world_time_app/pages/map.dart';
 import 'package:world_time_app/pages/details.dart';
 
-void main() => runApp(MaterialApp(
-    theme: ThemeData(fontFamily: 'Mon'),
-    initialRoute: '/',
-    routes: {
-      '/': (context) => Loading(),
-      '/search': (context) => Search(),
-      '/map': (context) => Map(),
-      '/login' : (context) => Login(),
-      '/details' : (context) => Details(),
-      '/questions': (context) => Questions()
-    }
-));
+void main() => runApp(HealthLaw());
 
+class HealthLaw extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: "HealthLaw",
+        theme: ThemeData(
+            fontFamily: 'Mon',
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => Loading(),
+          '/search': (context) => Search(),
+          '/map': (context) => Map(),
+          '/login': (context) => Login(),
+          '/details': (context) => Details(),
+          '/questions': (context) => Questions()
+        });
+  }
+}

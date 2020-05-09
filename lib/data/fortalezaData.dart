@@ -2,7 +2,9 @@ import 'package:world_time_app/models/healthCenter.dart';
 import 'package:world_time_app/models/medicament.dart';
 
 List<Medicament> fortaleza = [
-  new Medicament("Codeina", "grupo 2", "analgésico narcoticos ", "30mg", 08,
+  new Medicament("Codeina", "grupo 2",
+      "analgésico narcoticos ",
+      "30mg", 08,
       new HealthCenter("Posto Regional 1", "Rua Cel. Jucá 1636", "-3.75480700 -38.49173", 12)),
 
   new Medicament("Codeina", "grupo 2", "analgésico narcoticos ", "50mg", 15,
@@ -50,4 +52,10 @@ List<Medicament> fortaleza = [
 
   new Medicament("Bimatoprosta ", "grupo 1b", "L04x0 - outros imunossupressores ", "50mg", 14,
       new HealthCenter("Postos de Saúde - Regional II", "Av. Abolição , 416,", "-3.75480700 -38.49173", 5))
+];
+
+List<String> fortalezaSumary = [
+  "Codeina",
+  "Infliximabe",
+  "Adalimumabe"
 ];
